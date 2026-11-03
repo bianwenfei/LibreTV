@@ -105,7 +105,9 @@ PASSWORD=your-password npm start   # 监听 8080
 
 | 变量 | 必填 | 说明 |
 | --- | --- | --- |
-| `PASSWORD` | 是 | 访问密码；未设置时站点会提示管理员配置 |
+| `PASSWORD` | 是 | 访问密码；未设置
+
+# 部署测试触发时站点会提示管理员配置 |
 | `PROXY_SECRET` | 否 | 会话/代理签名密钥；不设置时从 PASSWORD 派生（多实例部署建议显式设置） |
 | `DEFAULT_SOURCES` | 否 | 预置采集站（JSON 数组），用户端自动出现且默认勾选，详见[配置文档](https://libretv.is-an.org/wiki/Configuration.html) |
 | `REQUEST_TIMEOUT` | 否 | 代理上游请求超时（毫秒），默认 8000 |
